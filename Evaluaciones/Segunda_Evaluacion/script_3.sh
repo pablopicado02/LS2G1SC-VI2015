@@ -9,11 +9,14 @@ else
 	#Verificar si el archivo realmente existe en la ruta
         cat $archivo &> /dev/null 
 	if [ $? = 1 ];then
+        #Si no existe o la ruta es incorrecta envia el siguiente mensaje
 	   echo "Corrija la ruta del archivo porfavor"
 	else
+        #Si el archivo existe, se crea en el formato indicado
 	   echo "ruta correcta"
            archivo="$archivo-$HOSTNAME-$(date +"%Y|%m|%d-%X").bkp"
            touch $archivo
+        #SE despliega el nombre del archivo respaldado
            echo "Archivo respladado con el nombre $archivo"
 	fi
 
