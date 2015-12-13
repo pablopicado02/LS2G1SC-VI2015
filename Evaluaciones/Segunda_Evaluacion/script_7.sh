@@ -1,5 +1,6 @@
 #!/bin/bash
-
+#Cree un script que permita determinar si un determinado proceso está activo o no, deberá de generar un registro cada vez que se ejecute indicando, la fecha, el nombre del proceso y el estado (ACTIVO o INACTIVO).
+clear
 echo "Dijite el nombre del proceso"
 read proceso
 pgrep $proceso &> /dev/null
