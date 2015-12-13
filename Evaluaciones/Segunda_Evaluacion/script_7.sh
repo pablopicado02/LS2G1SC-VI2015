@@ -14,7 +14,8 @@ echo "
        Reporte
       ---------
 
-Fecha:$(date +"%d|%m|%y")     
+Fecha:$(date +"%d|%m|%y") 
+User:$USER    
 Proceso:$proceso
 Estado:$estado
 ---------------------------
